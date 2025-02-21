@@ -1,91 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Biaya dan Harga Jual</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #f9f8f6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 20px;
         }
-
-        .container {
-            text-align: center;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            width: 300px;
+        h2, h3 {
+            color: #ffcc00;
         }
-
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        input {
+        table {
             width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+        }
+        th, td {
             padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            text-align: left;
         }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #5cb85c;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #4cae4c;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-        }
-
-        .footer a {
-            color: #5cb85c;
-            text-decoration: none;
-        }
-
-        .illustration {
-            margin-bottom: 20px;
-            /* Include a placeholder for the image */
-            background: url('path-to-your-image.svg') no-repeat center;
-            height: 100px; /* Adjust height based on your image */
-            width: 100%;
+        th {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="illustration"></div>
-        <h1>Welcome</h1>
-        <input type="text" placeholder="Username" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button>Log In</button>
-        <p class="footer">
-            <a href="#">Forgot Password?</a><br>
-            Don't Have an Account?
-            <a href="#">Sign Up</a>
-        </p>
-        <p class="footer">www.reallygreatsite.com</p>
-    </div>
+
+<h2>2. Biaya Operasional Per Hari (Estimasi untuk 50 Gelas/Hari)</h2>
+<table>
+    <tr>
+        <th>Komponen</th>
+        <th>Biaya Per Hari</th>
+    </tr>
+    <tr>
+        <td>Sewa Tempat</td>
+        <td>Rp 1.500.000/bulan (Rp 50.000/hari)</td>
+    </tr>
+    <tr>
+        <td>Gaji Karyawan</td>
+        <td>Rp 3.000.000/bulan (Rp 100.000/hari)</td>
+    </tr>
+    <tr>
+        <td>Listrik & Air</td>
+        <td>Rp 600.000/bulan (Rp 20.000/hari)</td>
+    </tr>
+    <tr>
+        <td>Peralatan & Pemeliharaan</td>
+        <td>Rp 500.000/bulan (Rp 16.500/hari)</td>
+    </tr>
+    <tr>
+        <td>Marketing & Lain-lain</td>
+        <td>Rp 400.000/bulan (Rp 13.500/hari)</td>
+    </tr>
+</table>
+<p><strong>Total Biaya Operasional per Hari:</strong> Rp 200.000</p>
+
+<h3>3. Hitungan HPP per Gelas</h3>
+<ul>
+    <li>Total Biaya Operasional: Rp 200.000 / 50 gelas = Rp 4.000 per gelas</li>
+    <li>
+        HPP per Gelas = Biaya Bahan Baku + Biaya Operasional
+        <br> Rp 5.925 + Rp 4.000 = Rp 9.925
+    </li>
+</ul>
+
+<h2>4. Penentuan Harga Jual & Keuntungan</h2>
+<ul>
+    <li>
+        Jika ingin mengambil margin keuntungan 50%, maka harga jual:
+        <br> Rp 9.925 x 1.5 = Rp 14.888 (dibulatkan Rp 15.000)
+    </li>
+    <li>
+        Jika ingin margin keuntungan 100%, maka harga jual:
+        <br> Rp 9.925 x 2 = Rp 19.850 (dibulatkan Rp 20.000)
+    </li>
+</ul>
+
+<h2>Kesimpulan</h2>
+<p>Detail dan analisis biaya operasional serta harga jual ini membantu dalam perencanaan bisnis.</p>
+
 </body>
 </html>
